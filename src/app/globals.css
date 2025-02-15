@@ -16,3 +16,14 @@
 #customCursor {
   transition: all 0.1s ease-out;
 }
+
+@layer utilities {
+  .btn-ping {
+    @apply animate-ping duration-700 absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75;
+  }
+
+  .btn-ping_dot {
+    @apply relative inline-flex rounded-full h-3 w-3 bg-blue-500;
+  }
+}
+

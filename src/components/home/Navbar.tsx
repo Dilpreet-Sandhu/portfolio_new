@@ -5,6 +5,7 @@ import {roboto} from '@/extra/fonts';
 import Link from 'next/link';
 import {Phone, Search} from 'lucide-react';
 import {motion} from 'framer-motion';
+import Button from '../Button';
 
 
 const Navbar = () => {
@@ -37,10 +38,7 @@ const Navbar = () => {
                 <Search/>
             </div>
 
-            <button className='relative overflow-hidden  group font-sans px-4 py-2 font-semibold text-[14px] bg-white clip-button uppercase text-black'>
-                <span className='relative z-10'>MENU</span>
-                <span className='absolute inset-0 bg-blue-400 scale-x-0 origin-left transition-all duration-300 ease-out group-hover:scale-x-100'></span>
-            </button>
+            <Button content='MENU'/>
 
         </div>
       

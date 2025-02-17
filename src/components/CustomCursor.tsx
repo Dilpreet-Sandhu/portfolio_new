@@ -24,7 +24,7 @@ const CustomCursor = () => {
     },[])
 
   return (
-    <div id="customCursor" className="fixed w-6 h-6 bg-white mix-blend-difference rounded-full pointer-events-none z-50"></div>
+    <div id="customCursor" className="fixed w-6 h-6 max-sm:hidden bg-white mix-blend-difference rounded-full pointer-events-none z-50"></div>
   )
 }
 

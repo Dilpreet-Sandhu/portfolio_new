@@ -6,11 +6,20 @@ import Link from 'next/link';
 import {Phone, Search} from 'lucide-react';
 import {motion} from 'framer-motion';
 import Button from '../Button';
+import { useDispatch } from 'react-redux';
+import { setSidebar } from '@/redux/slices/miscSlice';
 
 
 const Navbar = () => {
 
     const date = getDate();
+    const dispatch = useDispatch();
+
+    function toggleSidebar() {
+
+        dispatch(setSidebar());
+
+    }
 
 
   return (
@@ -38,7 +47,7 @@ const Navbar = () => {
                 <Search/>
             </div>
 
-            <Button content='MENU'/>
+            <Button onClick={toggleSidebar} content='MENU'/>
 
         </div>
       
